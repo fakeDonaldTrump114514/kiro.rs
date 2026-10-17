@@ -114,7 +114,7 @@ pub fn map_model(model: &str) -> Option<String> {
     } else if model_lower.contains("haiku") {
         Some("claude-haiku-4.5".to_string())
     } else {
-        None
+        Some(model.to_string())
     }
 }
 
